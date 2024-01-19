@@ -1,0 +1,125 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background:url("img.jpg");
+    background-size: cover;
+    background-image: center;
+
+  }
+
+  .wrapper
+  {
+    /* background-color: purple; */
+    background-color: transparent;
+    border:2px solid rgba(255,255,255,.2);
+    backdrop-filter:blur(20px); /* intensity of blurness */
+    box-shadow:0 0 20px white; /*shadowww */
+    color:white;
+    width:420px;
+    /* after doing all setup in the box then we came here */
+    border-radius:20px;
+    padding:30px 40px;
+  }
+
+  .wrapper h1{
+    font-size:2rem;
+    text-align: center;
+  }
+
+  .input-box
+  {
+    height:50px;
+    /* background-color: blue; */
+    margin:30px 0; /*top+bottom r+l */
+  }
+
+  .input-box input
+  {
+    height: 100%;
+    width:100%;
+    border:none;
+    outline:none; /* will not show any outline when clicekde on it */
+    border-radius:40px;
+    background: transparent;
+    border:2px solid rgba(255,255,255,.2);
+    font-size:1rem;
+    color:white;
+    padding: 20px 45px 20px 20px; /* top right bottom left */
+  }
+
+  .input-box input::placeholder
+  {
+    color:white;
+  }
+
+  .input-box i{
+   position:relative;
+   left:300px;/* adjust acc to padding in the wrapper */
+   bottom: 40px;
+   font-size:1rem;
+  }
+
+  .remember
+  {
+    display:flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin:-15px 0 15px; /*top l+r bottom */
+  }
+
+  .remember label input
+  {
+    accent-color: white; /* color of checking */
+    margin-right:5px;
+  }
+
+  .remember a{
+    color:#fff;
+    text-decoration: none;
+  }
+
+  .remember a:hover{
+    text-decoration: underline;
+  }
+
+  .btn{
+    width:100%;
+    height:40px;
+    background: white;
+    color:#333;
+    border:none;
+    outline:none;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow:0 0 10px rgba(0,0,0,.1);  /*rightmargin  bottommargin blureffect color */
+    cursor:pointer
+  }
+
+  .reg
+  {
+    font-size:15px;
+    text-align: center;
+    margin:20px 0 15px;/*top l+r bottom */
+  }
+
+  .reg  a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;;
+  }
+
+  .reg a:hover{
+    text-decoration: underline;
+  }
